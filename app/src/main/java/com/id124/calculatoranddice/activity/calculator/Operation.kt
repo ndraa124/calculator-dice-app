@@ -1,21 +1,18 @@
 package com.id124.calculatoranddice.activity.calculator
 
-class Operation {
-    companion object {
-        fun plus(firstNum: Double, secondNum: Double): Double {
-            return firstNum + secondNum
-        }
+open class Operation {
+    protected var firstNum: Double = 0.0
+    protected var secondNum: Double = 0.0
 
-        fun minus(firstNum: Double, secondNum: Double): Double {
-            return firstNum - secondNum
-        }
+    val plus: Double
+        get() = firstNum + secondNum
 
-        fun divide(firstNum: Double, secondNum: Double): Double {
-            return firstNum / secondNum
-        }
+    val minus: Double
+        get() = firstNum - secondNum
 
-        fun times(firstNum: Double, secondNum: Double): Double {
-            return firstNum * secondNum
-        }
-    }
+    val divide: Double
+        get() = firstNum / secondNum
+
+    val times: Double
+        get() = firstNum * secondNum
 }
