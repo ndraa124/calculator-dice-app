@@ -2,7 +2,7 @@ package com.id124.calculatoranddice.activity.calculator
 
 import android.widget.TextView
 
-class Calculator(private val tvResult: TextView): Operation() {
+class Calculator(private val tvResult: TextView) : Operation() {
     private var result = StringBuilder()
     private var operation: Char = ' '
 

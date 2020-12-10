@@ -11,10 +11,10 @@ class DiceActivity : BaseActivity() {
     private lateinit var dice: Dice
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.setLayout(R.layout.activity_dice)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dice)
-        supportActionBar?.title = getString(R.string.dice)
 
+        supportActionBar?.title = getString(R.string.dice)
         dice = Dice(iv_dice, iv_dice_gif)
     }
 

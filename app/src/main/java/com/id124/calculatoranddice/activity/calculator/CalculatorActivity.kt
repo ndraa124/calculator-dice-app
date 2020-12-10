@@ -10,10 +10,10 @@ class CalculatorActivity : BaseActivity() {
     private lateinit var calculator: Calculator
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.setLayout(R.layout.activity_calculator)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculator)
-        supportActionBar?.title = getString(R.string.calculator)
 
+        supportActionBar?.title = getString(R.string.calculator)
         calculator = Calculator(tv_result)
     }
 
